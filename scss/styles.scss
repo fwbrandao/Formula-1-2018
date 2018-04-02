@@ -1,0 +1,15 @@
+@import "reset";
+
+@import "variables";
+
+@import "small-default";
+
+//35rem is also 560px (if basefont is 16px)
+@media only screen and (min-width: 35em) {
+  @import "medium";   
+} // end media query
+
+//64rem is also 1024px (if basefont is 16px)
+@media only screen and (min-width: 60em) {
+    @import "large";
+} // end media query

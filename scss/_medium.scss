@@ -1,0 +1,52 @@
+/*  -----------------SOCIAL ICONS --------------------------- */
+header {
+    ul.social li {float: left; }
+    ul.social li a{font-size: 2.5rem;}
+   
+    
+    form input {
+        width: 8rem;}
+    form input:focus{width:11rem;}
+} // end of header
+
+
+
+
+
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+    
+    .cars:hover{
+       transition: transform 1s;
+        transform: scale(1.2); 
+    }
+    
+    figure.photo {width: 50%-$gutterdbl; float: left; height: 290px;}
+    
+    div.blog article {
+        float: left;
+        width: 50%-$gutterdbl;
+    } // end blog
+    
+    div.blog article:nth-child(2n+1) { clear: left;}
+    
+    
+        div.pop {
+            margin: 30px auto;
+            padding: 2rem 0;
+        .title {font-size: 4rem;}
+        .subtitle {font-size: 3rem;}
+        .copy {padding: 2rem 0 0 0;}
+        .copy span {font-size: 5rem; } 
+    }
+    
+    /*---------COLUNM LAYOUT-------------*/
+  
+    
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {width:  $w; float: left;}
+    }
+    
+} // end main

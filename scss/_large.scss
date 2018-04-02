@@ -1,0 +1,58 @@
+/*  ----------------------- BODY --------------------------- */
+
+/*main, { max-width: 60rem; margin: 0 auto; border-radius: 5px;}*/
+body{padding: .5rem 50px; }
+
+
+ 
+
+/*  ----------------------- NAVIGATION --------------------------- */
+nav {
+    ul {
+        margin-left: $gutter;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    ul li {width: auto;}
+    ul li:last-child{border-right: 1px solid rgba(0,0,0,0.3);}
+    ul li a {
+        padding: .5rem 1rem;
+    }
+} // end nav
+
+
+
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+    
+    .cars:hover{
+       transition: transform 1s;
+        transform: scale(1.6); 
+    }
+    
+    
+    figure.photo {width: 25%-$gutterdbl; float: left; height: 170px; }
+    
+    
+    div.blog article {
+        float: left;
+        width: 33.33%-$gutterdbl;
+    } // end blog
+    
+    div.blog article:nth-child(2n+1) { clear: none;}
+    div.blog article:nth-child(3n+1) { clear: left;}
+    
+    section{max-width: 60rem; margin: 0 auto;}
+    
+    
+    /*---------COLUNM LAYOUT-------------*/
+  
+    
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .large-#{$i} {width:  $w; float: left;}
+    }
+    
+} // end main
+
+
